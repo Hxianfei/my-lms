@@ -26,7 +26,7 @@ const logout = () => {
       <el-header class="user-header">
 
         <span class="user-title">
-          <router-link class="home-link" to="/home">KUST昆明理工大学图书馆：</router-link>
+          <router-link class="home-link" to="/home">MY-LMS图书馆：</router-link>
           个人中心</span>
         <el-button type="primary" :plain="true" class="logout-btn" @click="logout">退出登录</el-button>
       </el-header>

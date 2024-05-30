@@ -18,7 +18,7 @@ const logout = () => {
   <div class="admin">
     <el-container>
       <el-header class="admin-header">
-        <span class="admin-title">昆明理工大学图书管理系统</span>
+        <span class="admin-title">MY-LMS图书管理系统</span>
         <el-button type="primary" :plain="true" class="logout-btn" @click="logout">退出登录</el-button>
       </el-header>
       <el-container>

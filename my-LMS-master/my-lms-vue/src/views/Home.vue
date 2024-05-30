@@ -64,7 +64,7 @@ const carouselImg = ref([
   <div class="home">
     <el-container>
       <el-header class="home-header">
-        <span class="home-title">KUST昆明理工大学图书馆</span>
+        <span class="home-title">MY-LMS图书馆</span>
         <span class="header-link">
         <router-link to="/user"> 个人中心</router-link>
         </span>

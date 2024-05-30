@@ -74,7 +74,7 @@ const rules = reactive({
   <div class="login">
     <el-container>
       <el-header class="login-header">
-        <RouterLink to="/"class="title">昆明理工大学图书馆</RouterLink>
+        <RouterLink to="/"class="title">MY-LMS图书管理系统</RouterLink>
       </el-header>
       <el-main class="login-main">
         <!--        登录表单-->
