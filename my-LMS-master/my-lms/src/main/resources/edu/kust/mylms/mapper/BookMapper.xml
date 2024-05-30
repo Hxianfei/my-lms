@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.kust.mylms.mapper.BookMapper">
+    <select id="findAll" resultType="edu.kust.mylms.pojo.vo.BookVo">
+        select book.*, category.name as category_name
+        from book
+        left join book_category on book.id = book_category.book_id
+        left join category on book_category.category_id = category.id
+        <where>
+            <if test="start != null">
+                book.title like concat(#{start},'%')
+            </if>
+            <if test="categoryId != null">
+                and category.id = #{categoryId}
+            </if>
+        </where>
+    </select>
+</mapper>
